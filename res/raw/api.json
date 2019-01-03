@@ -1,0 +1,33 @@
+{
+	"google":
+	{
+		"iap_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjrTc/gDxdKsA+XFuTJt46z0UB2j0KBwhF1p1iAMZLgc1uV7QwvmQXTlFgrMzF7+V9th0bWSfsaTkHoTi0qNDShuh3kbBRrkl49HLh7Q59oqpLB2p4vlsShwOcYbEJaVVNXOY9ugcs44MeOWc1wfCfpT2Fruu2uXYvdVqXmoYzXBxACWonuODOGnS3jsUoorz58wV6qkwK0X8vRquysVVMMeXBZYnd64ymz4j9wdn/cFhHo9vqTP8iDnqzjHdIi8fJjmHHzHXvRCTuFUTEB++cMvdeOn9mG20Iehtnrni+mKZey53i5SoXfPXknj45kP/Ag4i6nowyaD6jYbQGsl90wIDAQAB",
+		"key": "AIzaSyBlnlrs3px9KLYEe9fvU8_oqo2EmJn65bQ",
+		"client_id": "242676245106-plki0rkftfbcavlbg730lgleddt9necl.apps.googleusercontent.com"
+	},
+	"dropbox":
+	{
+		"key": "u1sdtjrgt2mqc1g",
+		"secret": "vfabsvuween1gta"
+	},
+	"guidebox":
+	{
+		"key": "ed964324c482d8a615f305c5fbfaa3f3ba7b6186"
+	},
+	"spotify":
+	{
+		"redirect": "drageniix://callback.spotify/",
+		"client": "88f9843138d8481f9910a3b5faa432ef",
+		"secret": "1e4464372c6547bd9a92ca79fbafad00"
+	},
+	"twitch":
+	{
+		"redirect": "drageniix://callback.twitch/",
+		"client": "zhdhipvme38seidniz0t06sd7mtzpn",
+		"secret": "9w39c3xwh7s6ueokns5inv227rvbu4"
+	},
+	"omdb":
+	{
+		"key": "58047200"
+	}
+}

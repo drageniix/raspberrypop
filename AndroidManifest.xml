@@ -1,0 +1,199 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.drageniix.raspberrypop">
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="net.dinglisch.android.tasker.PERMISSION_RUN_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/> -->
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/LightTheme">
+
+        <activity
+            android:taskAffinity=".Main"
+            android:name="com.drageniix.raspberrypop.activities.ScanActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Base.TransparentTheme">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_list" />
+        </activity>
+
+        <activity
+            android:taskAffinity=".Main"
+            android:name="com.drageniix.raspberrypop.activities.CreationActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Create QR Code"
+            android:theme="@style/Base.TransparentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="text/vcard" />
+                <data android:mimeType="text/x-vcard" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:taskAffinity=".Main"
+            android:name="com.drageniix.raspberrypop.activities.QRActivity"
+            android:icon="@drawable/create_qr"
+            android:label="Create QR Code"
+            android:theme="@style/Base.TransparentTheme"/>
+        <activity
+            android:taskAffinity=".Main"
+            android:name="com.drageniix.raspberrypop.activities.CSVActivity"
+            android:icon="@drawable/csv_creation"
+            android:label="Create CSV"
+            android:theme="@style/Base.TransparentTheme"/>
+        <activity
+            android:taskAffinity=".Main"
+            android:name="com.drageniix.raspberrypop.activities.RPOPActivity"
+            android:icon="@drawable/save_to_device"
+            android:label="Create RPOP"
+            android:theme="@style/Base.TransparentTheme"/>
+
+        <activity
+            android:taskAffinity=".Main"
+            android:name="com.drageniix.raspberrypop.activities.SplashScreenActivity"
+            android:theme="@style/Base.SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter
+                android:icon="@mipmap/ic_launcher"
+                android:label="Register Tag(s)">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="*"
+                    android:scheme="file"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.rpop" />
+                <data
+                    android:scheme="content"
+                    android:pathPattern=".*\\.rpop"
+                    android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:taskAffinity=".Main"
+            android:name="com.drageniix.raspberrypop.activities.MainActivity"
+            android:configChanges="keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@style/LightTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="callback.spotify"
+                    android:scheme="drageniix"/>
+                <data
+                    android:host="callback.twitch"
+                    android:scheme="drageniix"/>
+                <data
+                    android:host="callback.dropbox"
+                    android:scheme="drageniix"/>
+                <data
+                    android:host="callback.google"
+                    android:scheme="drageniix.auth"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:taskAffinity=".Floating"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:name=".activities.NoteActivity"
+            android:theme="@style/FloatingTheme"/>
+        <activity
+            android:taskAffinity=".Floating"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:name=".activities.ListActivity"
+            android:theme="@style/FloatingTheme"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <receiver
+            android:name=".services.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.AlarmSoundService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.drageniix.raspberrypop.services.StopwatchService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1"/>
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBlnlrs3px9KLYEe9fvU8_oqo2EmJn65bQ"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_gravity="center_horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="8dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".dialog.DatabaseDialog"
+    android:fillViewport="false">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediaPopup"
+        android:layout_gravity="center"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <AutoCompleteTextView
+                android:id="@+id/collectionName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/collection_hint"
+                android:maxLines="1"
+                android:completionThreshold="1"
+                android:textStyle="bold"
+                android:textColor="?colorAccent2"
+                android:fontFamily="casual"
+                android:selectAllOnFocus="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?textAppearanceListItemSmall"
+                android:textSize="12sp"
+                android:layout_toStartOf="@+id/advanced" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="@string/tasker_switch"
+                android:id="@+id/advanced"
+                android:checked="false"
+                android:textAppearance="?textAppearanceListItemSmall"
+                android:textSize="12sp"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:maxLines="1"
+            android:hint="@string/figure_name"
+            android:selectAllOnFocus="true"
+            android:id="@+id/popName"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:contentDescription="@string/streaming_choice"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/streamSource"
+                app:srcCompat="@drawable/ic_stream"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <AutoCompleteTextView
+                        android:layout_width="fill_parent"
+                        android:selectAllOnFocus="true"
+                        android:imeOptions="actionSearch"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="?colorAccent"
+                        android:textStyle="bold"
+                        android:hint="@string/media_title"
+                        android:id="@+id/title"
+                        android:completionThreshold="1"
+                        android:layout_gravity="center_vertical|bottom"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/searchButton" />
+
+                    <ImageButton
+                        android:contentDescription="@string/search_description"
+                        android:layout_width="24dip"
+                        android:layout_height="24dip"
+                        android:id="@+id/searchButton"
+                        android:layout_centerVertical="true"
+                        android:backgroundTint="?colorAccent"
+                        android:backgroundTintMode="src_in"
+                        android:adjustViewBounds="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:id="@+id/customHolder"
+                    android:layout_weight="4">
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="start"
+                        android:gravity="start"
+                        android:layout_marginStart="-15dp"
+                        android:id="@+id/radioGroup"
+                        android:scaleX="0.85"
+                        android:scaleY="0.85">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radio1"
+                            android:buttonTint="?textColor"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radio2"
+                            android:buttonTint="?textColor"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radio3"
+                            android:buttonTint="?textColor"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radio4"
+                            android:buttonTint="?textColor"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radio5"
+                            android:buttonTint="?textColor"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radio6"
+                            android:buttonTint="?textColor"/>
+                    </RadioGroup>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <AutoCompleteTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:maxLines="1"
+                android:completionThreshold="1"
+                android:hint="@string/before_task"
+                android:id="@+id/taskerSearchB"
+                android:layout_weight="0.50"
+                android:visibility="gone" />
+
+            <AutoCompleteTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:maxLines="1"
+                android:completionThreshold="1"
+                android:hint="@string/after_task"
+                android:id="@+id/taskerSearchA"
+                android:layout_weight=".50"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskerParams"
+        android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>

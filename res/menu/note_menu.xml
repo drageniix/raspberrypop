@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_action_font"
+        android:title="Font Style">
+        <menu>
+            <item
+                android:id="@+id/increaseFont"
+                android:icon="@drawable/ic_action_increase_font"
+                android:title="Increase"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:id="@+id/decreaseFont"
+                android:icon="@drawable/ic_action_decrease_font"
+                android:title="Decrease"
+                app:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/fullscreen"
+        android:icon="@drawable/ic_action_fullscreen"
+        android:title="Fullscreen"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/ic_action_cancel"
+        android:title="Exit"
+        app:showAsAction="ifRoom"/>
+</menu>

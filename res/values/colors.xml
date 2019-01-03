@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_colorPrimary">#781b52</color>
+    <color name="light_colorPrimaryDark">#580431</color>
+    <color name="light_colorAccent">#6e84a9</color>
+    <color name="light_colorAccent2">#a77d4d</color>
+    <color name="light_background">#fff</color>
+    <color name="light_selection">#b7b7b7</color>
+    <color name="light_textColor">#000</color>
+
+    <color name="dark_colorPrimary">#263238</color>
+    <color name="dark_colorPrimaryDark">#21272b</color>
+    <color name="dark_colorAccent">#86b2b4</color>
+    <color name="dark_colorAccent2">#d1a451</color>
+    <color name="dark_background">#212121</color>
+    <color name="dark_selection">#616161</color>
+    <color name="dark_textColor">#e1fdf9</color>
+
+    <color name="amoled_colorPrimary">#151515</color>
+    <color name="amoled_colorPrimaryDark">#0e0e0e</color>
+    <color name="amoled_colorAccent">#ba5a2c</color>
+    <color name="amoled_colorAccent2">#fd3333</color>
+    <color name="amoled_background">#000000</color>
+    <color name="amoled_textColor">#f2e3b0</color>
+
+    <color name="seasonal_colorPrimary">#87c4ab</color>
+    <color name="seasonal_colorPrimaryDark">#009575</color>
+    <color name="seasonal_colorAccent">#e38699</color>
+    <color name="seasonal_colorAccent2">#65a7d1</color>
+    <color name="seasonal_background">#fafdff</color>
+    <color name="seasonal_textColor">#0c2948</color>
+
+    <color name="seasonal2_colorPrimary">#d4a874</color>
+    <color name="seasonal2_colorPrimaryDark">#9e703a</color>
+    <color name="seasonal2_colorAccent">#b93737</color>
+    <color name="seasonal2_colorAccent2">#cc6302</color>
+    <color name="seasonal2_background">#fff</color>
+    <color name="seasonal2_textColor">#39312b</color>
+
+    <color name="seasonal3_colorPrimary">#3dc3d2</color>
+    <color name="seasonal3_colorPrimaryDark">#2e7596</color>
+    <color name="seasonal3_colorAccent">#f0b444</color>
+    <color name="seasonal3_colorAccent2">#77b969</color>
+    <color name="seasonal3_background">#fff</color>
+    <color name="seasonal3_textColor">#033535</color>
+
+    <color name="seasonal4_colorPrimary">#55558b</color>
+    <color name="seasonal4_colorPrimaryDark">#413b5c</color>
+    <color name="seasonal4_colorAccent">#5aadd2</color>
+    <color name="seasonal4_colorAccent2">#7c4a74</color>
+    <color name="seasonal4_background">#fff</color>
+    <color name="seasonal4_textColor">#24224a</color>
+
+    <color name="off">#c1cdcd</color>
+    <color name="plex">#e4b53d</color>
+    <color name="kodi">#12b1e6</color>
+    <color name="notepad">#8a5436</color>
+    <color name="google">#740a48</color>
+    <color name="youtube">#cf2020</color>
+    <color name="spotify">#24cf5f</color>
+    <color name="twitch">#6542a5</color>
+    <color name="maps">#db4c41</color>
+    <color name="uri">#66a0ff</color>
+    <color name="local">#efe2c6</color>
+    <color name="timer">#9b74c6</color>
+    <color name="contact">#ec8e9b</color>
+    <color name="launch">#19d9c2</color>
+    <color name="note">#efdfa4</color>
+    <color name="device">#2e6f76</color>
+    <color name="pktc">#f34336</color>
+    <color name="pandora">#277af9</color>
+
+    <color name="tasker">#fdb838</color>
+    <color name="roku">#502f81</color>
+
+    <color name="highlight">#eddb37</color>
+    <color name="splash_background">#000</color>
+</resources>

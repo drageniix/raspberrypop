@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ServerFragment">
+
+    <item
+        android:id="@+id/update"
+        android:icon="@drawable/ic_action_update"
+        android:title="@string/server_update"
+        app:showAsAction="ifRoom"/>
+
+</menu>

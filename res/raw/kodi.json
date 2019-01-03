@@ -1,0 +1,173 @@
+{
+	"application": 
+	{
+		"jsonrpc": "2.0",
+		"id": 1,
+		"method": "XBMC.GetInfoLabels",
+		"params": 
+		{
+			"labels": 
+			[
+				"System.FriendlyName"
+			]
+		}
+	},
+	"play": 
+	{
+		"jsonrpc": "2.0",
+		"id": 2,
+		"method": "Player.Open",
+		"params": 
+		{
+			"item": null
+		}
+	},
+	"videos": 
+	{
+		"jsonrpc": "2.0",
+		"id": 3,
+		"method": null,
+		"params": 
+		{
+			"filter": 
+			{
+				"or": 
+				[
+					{
+						"field": "title",
+						"operator": "contains",
+						"value": null
+					},
+					{
+						"field": "year",
+						"operator": "contains",
+						"value": null
+					},
+					{
+						"field": "plot",
+						"operator": "contains",
+						"value": null
+					}
+				]
+			},
+			"limits": 
+			{
+				"start": 0,
+				"end": 30
+			},
+			"sort": 
+			{
+				"order": "ascending",
+				"method": "label",
+				"ignorearticle": true
+			},
+			"properties": 
+			[
+				"title",
+				"plot",
+				"year",
+				"thumbnail",
+				"file"
+			]
+		}
+	},
+	"music": 
+	{
+		"jsonrpc": "2.0",
+		"id": 4,
+		"method": null,
+		"params": 
+		{
+			"filter": 
+			{
+				"or": 
+				[
+					{
+						"field": "title",
+						"operator": "contains",
+						"value": null
+					},
+					{
+						"field": "album",
+						"operator": "contains",
+						"value": null
+					},
+					{
+						"field": "artist",
+						"operator": "contains",
+						"value": null
+					}
+				]
+			},
+			"limits": 
+			{
+				"start": 0,
+				"end": 30
+			},
+			"sort": 
+			{
+				"order": "ascending",
+				"method": null,
+				"ignorearticle": true
+			},
+			"properties": 
+			[
+				"title",
+				"artist",
+				"album",
+				"thumbnail",
+				"file"
+			]
+		}
+	},
+	"sources": 
+	{
+		"jsonrpc": "2.0",
+		"id": 5,
+		"method": "Files.GetSources",
+		"params": 
+		{
+			"media": "pictures",
+			"sort": 
+			{
+				"order": "ascending",
+				"method": "label",
+				"ignorearticle": true
+			}
+		}
+	},
+	"directory": 
+	{
+		"jsonrpc": "2.0",
+		"id": 6,
+		"method": "Files.GetDirectory",
+		"params": 
+		{
+			"directory": null, 
+			"media": "pictures",
+			"sort": 
+			{
+				"order": "ascending",
+				"method": "label",
+				"ignorearticle": true
+			}
+		}
+	},
+	"pvr_recording": 
+	{
+		"jsonrpc": "2.0",
+		"id": 7,
+		"method": "PVR.GetRecordings",
+		"params": 
+		{
+			"properties": 
+			[
+				"title",
+				"channel",
+				"plot",
+				"icon",
+				"file"
+			]
+		}
+	}
+}

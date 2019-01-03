@@ -1,0 +1,133 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Testing/Debug"
+        android:key="debug">
+        <MultiSelectListPreference
+            android:icon="@drawable/robot"
+            android:title="Debug Options"
+            android:entries="@array/debug_names"
+            android:entryValues="@array/debug_values"
+            android:defaultValue="@array/empty"
+            android:key="DEBUG"/>
+        <Preference
+            android:icon="@drawable/debug"
+            android:title="Create New Tag"
+            android:summary="Adds a tag for testing purposes."
+            android:key="createTag"/>
+        <Preference
+            android:icon="@drawable/test"
+            android:title="Start Experiment (Developer)"
+            android:summary="Checks status of current implementation task."
+            android:key="currentTest"/>
+    </PreferenceCategory>
+
+    <Preference
+        android:key="PREMIUM"/>
+
+    <PreferenceCategory android:title="@string/appearance_category">
+
+        <SwitchPreference
+            android:key="BARCODE"
+            android:title="@string/barcode_button"
+            android:summary="@string/barcode_summary"
+            android:layout="@layout/preference_centered_icon"
+            android:defaultValue="false"/>
+
+        <SwitchPreference
+            android:key="CONTINUOUS"
+            android:title="@string/continuous_button"
+            android:summary="@string/continuous_summary"
+            android:layout="@layout/preference_centered_icon"
+            android:defaultValue="true"/>
+
+        <SwitchPreference
+            android:key="PRICES"
+            android:title="@string/prices_button"
+            android:summary="@string/prices_summary"
+            android:layout="@layout/preference_centered_icon"
+            android:defaultValue="true"/>
+
+        <ListPreference
+            app:entries="@array/theme_names"
+            app:entryValues="@array/theme_values"
+            android:defaultValue="0"
+            android:key="THEME_STRING"
+            android:layout="@layout/preference_centered_icon"
+            android:title="@string/style_button"
+            android:summary="@string/style_summary"/>
+
+        <ListPreference
+            android:defaultValue="CARD"
+            app:entries="@array/layout_names"
+            app:entryValues="@array/layout_values"
+            android:key="VIEW"
+            android:layout="@layout/preference_centered_icon"
+            android:title="@string/layout_button" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/data_category">
+        <Preference
+            android:title="@string/template_button"
+            android:summary="@string/template_summary"
+            android:key="TEMPLATE"
+            android:layout="@layout/preference_centered_icon"
+            android:layout_height="wrap_content" />
+
+        <Preference
+            android:title="@string/import_button"
+            android:summary="@string/import_summary"
+            android:key="LOAD"
+            android:layout="@layout/preference_centered_icon"
+            android:layout_height="wrap_content" />
+
+        <Preference
+            android:title="@string/sync_button"
+            android:summary="@string/sync_summary"
+            android:key="sync"
+            android:layout="@layout/preference_centered_icon"
+            android:layout_height="wrap_content" />
+
+        <CheckBoxPreference
+            android:key="THUMBNAIL"
+            android:title="@string/thumbnail_button"
+            android:summary="@string/thumbnail_summary"
+            android:layout="@layout/preference_centered_icon"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="accounts"
+        android:title="@string/playback_category">
+
+        <Preference
+            android:icon="@drawable/roku"
+            android:title="@string/roku_button"
+            android:layout="@layout/preference_centered_icon"
+            android:key="roku"/>
+
+        <Preference
+            android:title="@string/spotify_button"
+            android:layout="@layout/preference_centered_icon"
+            android:key="spotify"/>
+
+        <Preference
+            android:title="@string/pandora_button"
+            android:layout="@layout/preference_centered_icon"
+            android:key="pandora"/>
+
+        <Preference
+            android:title="@string/twitch_button"
+            android:layout="@layout/preference_centered_icon"
+            android:key="twitch"/>
+
+        <Preference
+            android:title="@string/plex_button"
+            android:layout="@layout/preference_centered_icon"
+            android:key="plex"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

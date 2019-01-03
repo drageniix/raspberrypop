@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/email">
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:id="@+id/login_prompt"
+            android:textAppearance="?textAppearancePopupMenuHeader"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textWebEmailAddress"
+            android:id="@+id/login"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColorHint="?colorAccent2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/pw"
+        android:gravity="center_vertical"
+        android:layout_below="@id/email">
+
+        <TextView
+            android:layout_width="125dp"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearancePopupMenuHeader"
+            android:id="@+id/password_prompt"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textWebPassword"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColorHint="?colorAccent2"
+            android:id="@+id/password" />
+    </LinearLayout>
+</RelativeLayout>

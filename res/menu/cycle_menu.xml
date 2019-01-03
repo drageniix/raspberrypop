@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_cycle_type"
+        android:icon="@drawable/ic_action_shuffle"
+        android:title="@string/cycle_type"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/off"
+                android:title="@string/cycle_0" />
+            <item android:id="@+id/cycle"
+                android:title="@string/cycle_1" />
+            <item android:id="@+id/shuffle"
+                android:title="@string/cycle_2" />
+            <item android:id="@+id/all"
+                android:title="@string/cycle_3" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/ic_action_edit"
+        android:title="@string/cycle_rename"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/chart"
+        android:icon="@drawable/ic_action_line_chart"
+        android:title="@string/cycle_chart"
+        app:showAsAction="ifRoom"/>
+
+</menu>

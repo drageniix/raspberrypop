@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="4dp"
+        android:backgroundTint="?colorAccent"
+        android:backgroundTintMode="src_in"
+        android:adjustViewBounds="false"
+        android:id="@+id/operation"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+    <EditText
+        android:id="@+id/param"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_creation"
+        android:icon="@drawable/ic_action_add_qr"
+        android:title="@string/nav_creation" />
+
+    <item
+        android:title="@string/nav_tags"
+        android:id="@+id/tags">
+        <menu>
+        </menu>
+    </item>
+
+    <item
+        android:title="@string/nav_settings"
+        android:id="@+id/settings">
+            <menu>
+                <item
+                    android:id="@+id/nav_servers"
+                    android:icon="@drawable/ic_action_server"
+                    android:title="@string/nav_servers" />
+                <item
+                    android:id="@+id/nav_appear"
+                    android:icon="@drawable/ic_action_settings"
+                    android:title="@string/nav_preferences" />
+                <item
+                    android:id="@+id/nav_help"
+                    android:icon="@android:drawable/ic_menu_help"
+                    android:title="@string/nav_support"/>
+            </menu>
+    </item>
+
+</menu>

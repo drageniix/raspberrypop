@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:layout_marginTop="8dp"
+        android:layout_gravity="top"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="4dp"
+        android:backgroundTint="?colorAccent"
+        android:backgroundTintMode="src_in"
+        android:adjustViewBounds="false"
+        android:id="@+id/operation"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <EditText
+        android:layout_toEndOf="@id/operation"
+        android:id="@+id/param"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <RadioGroup
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@id/operation"
+        android:layout_below="@id/param"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/options"/>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/options"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:drawableEnd="@drawable/ic_action_add_light"
+        android:drawableTint="?colorAccent"
+        android:layout_gravity="center"
+        android:text="Add Option"
+        android:id="@+id/add_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"/>
+
+    <LinearLayout
+        android:layout_below="@id/add_box"
+        android:layout_toEndOf="@id/operation"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkboxes"/>
+</RelativeLayout>

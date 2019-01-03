@@ -1,0 +1,188 @@
+<resources>
+    <!--Base Activity-->
+    <string name="app_name">RaspberryPOP</string>
+    <string name="scan_image">Scan tag</string>
+    <string name="navigation_description">Navigation Header</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="credits">Application by Ashley Barrow\nraspberrypop@drageniix.com</string>
+
+    <!--Menu-->
+    <string name="default_collection">"All Saved Tags"</string>
+    <string name="nav_tags">Tag Collections</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_servers">Servers</string>
+    <string name="nav_creation">Create QR Code</string>
+    <string name="nav_preferences">General Settings</string>
+    <string name="nav_support">Support &amp; FAQ</string>
+    <string name="preference_pie_chart">Tag Statistics</string>
+    <string name="server_update">Search for Servers</string>
+    <string name="server_addition">Add a Server</string>
+    <string name="media_search">Search</string>
+    <string name="media_select_all">Select All</string>
+    <string name="media_selection_mode">Selection Mode</string>
+    <string name="media_sort">Sort Tags</string>
+    <string name="media_sort_tag">By Tag Name</string>
+    <string name="media_sort_title">By Tag Title</string>
+    <string name="media_sort_type">By Tag Type</string>
+    <string name="media_sort_label">By Label</string>
+    <string name="media_sort_stream">By Tag Source</string>
+    <string name="media_sort_date">By Date Added</string>
+    <string name="media_sort_often">By Scan Frequency</string>
+    <string name="media_sort_collection">By Collection</string>
+    <string name="media_rearrange">Rearrange Tags</string>
+    <string name="qr_create">Create QR Code</string>
+    <string name="qr_image">Read QR Code</string>
+    <string name="qr_search">Search Code</string>
+    <string name="qr_flash">Toggle Flash</string>
+    <string name="support_expand">Expand All</string>
+    <string name="support_collapse">Collapse All</string>
+    <string name="cycle_0">Off</string>
+    <string name="cycle_1">Cycle</string>
+    <string name="cycle_2">Random</string>
+    <string name="cycle_3">Perform All</string>
+    <string name="cycle_chart">Scan History</string>
+    <string name="cycle_rename">Rename Tag</string>
+    <string name="cycle_type">Cycle Type</string>
+
+    <!--Intent-->
+    <string name="location_failed">This action requires location permissions!</string>
+    <string name="camera_failed">This action requires camera permissions!</string>
+    <string name="contact_failed">This action requires contact permissions!</string>
+    <string name="image_request">"Choose New Image"</string>
+    <string name="file_request">Choose a file</string>
+    <string name="share_failed">Cannot add tag(s)!</string>
+    <string name="stream_failed">Media not available to stream.</string>
+
+    <!--Billing-->
+    <string name="premium_unlocked">Premium Unlocked!</string>
+    <string name="premium_summary">Save unlimited tags and servers, organize tags into collections, and access all themes.</string>
+    <string name="premium_purchase_success">"All premium features unlocked!"</string>
+    <string name="premium_purchase_failure">"Could not complete purchase."</string>
+    <string name="premium_unavailable">Premium Unlock Unavailable"</string>
+    <string name="premium_unavailable_summary">Check your billing preferences and connection.</string>
+    <string name="advertisement_text">✅ Create Unlimited Tags\n✅ Organize Tags into Collections\n✅ Include Unlimited Servers\n✅ Access All Themes\n✅ Support Future Development</string>
+    <string name="premium_required">Upgrade to RaspberryPOP Premium to save more tags!</string>
+
+    <!--Dialog-->
+    <string name="cancel">Cancel</string>
+    <string name="submit">OK</string>
+    <string name="edit">Edit</string>
+    <string name="reassign">Reassign</string>
+    <string name="confirm">Are you sure?</string>
+    <string name="new_collection">🗂</string>
+    <string name="new_collection_backup">📁</string>
+
+    <!--Settings-->
+    <string name="appearance_category">Appearance</string>
+    <string name="layout_button">Layout Style</string>
+    <string name="style_button">Theme Color</string>
+    <string name="style_summary">Changes applied when you leave this page.</string>
+    <string name="data_category">Data Management</string>
+    <string name="barcode_button">Open to Scanner</string>
+    <string name="barcode_summary">Always open QR/Barcode scanner on launch.</string>
+    <string name="continuous_button">Keep Scanner Open</string>
+    <string name="continuous_summary">Do not return home after each scan.</string>
+    <string name="prices_button">Show Product Prices</string>
+    <string name="prices_summary">Display prices for product barcodes.</string>
+    <string name="thumbnail_button">Always Download Thumbnails</string>
+    <string name="thumbnail_summary">Allow downloading images on mobile data.</string>
+    <string name="sync_button">Backup/Restore</string>
+    <string name="sync_summary">Restore or backup all tags, servers, and settings.</string>
+    <string name="import_button">Import Tag</string>
+    <string name="import_summary">Load tag(s) from an RPOP file.</string>
+    <string name="template_button">Manage Form Templates</string>
+    <string name="template_summary">Add, edit, or delete a custom form template.</string>
+    <string name="playback_category">Playback and Accounts</string>
+    <string name="roku_button">Choose a Roku Device</string>
+    <string name="plex_button">Plex.TV Settings</string>
+    <string name="dropbox_button">Calibre Dropbox Account</string>
+    <string name="spotify_button">Use Spotify Playlists &amp; Links</string>
+    <string name="pandora_button">Retrieve Pandora Stations</string>
+    <string name="twitch_button">Get Twitch Follows</string>
+    <string name="email_hint">me@example.com</string>
+    <string name="password_hint">password</string>
+    <string name="plex_email">Plex.TV Email: </string>
+    <string name="plex_password">Plex.TV Password: </string>
+    <string name="pandora_email">Pandora Username: </string>
+    <string name="pandora_password">Pandora Password: </string>
+    <string name="file_text">Your local file tags take up:</string>
+    <string name="stat_collections">Collections</string>
+    <string name="stat_tags">Tags</string>
+    <string name="stat_breakdown">Tag Breakdown</string>
+    <string name="stat_log">Debug Logging</string>
+
+    <!--Server-->
+    <string name="plex_username">Plex.TV Email</string>
+    <string name="kodi_username">Username (kodi)</string>
+    <string name="calibre_username">Username (calibre)</string>
+    <string name="generic_password">Password</string>
+    <string name="plex_port">Port (32400)</string>
+    <string name="kodi_port">Port (8080)</string>
+    <string name="calibre_port">Port (8080)</string>
+    <string name="calibre_ip">Calibre Server IP Address</string>
+    <string name="plex_ip">Plex Server IP Address</string>
+    <string name="kodi_ip">Kodi Server IP Address</string>
+    <string name="empty_servers">No servers found!</string>
+    <string name="update_server_description">Update Server</string>
+    <string name="advanced">Advanced </string>
+    <string name="server_add">Add Server</string>
+    <string name="server_edit">Edit Server</string>
+    <string name="server_failed_add">Unable to add server!</string>
+    <string name="server_failed_edit">Unable to edit server!</string>
+    <string name="server_failed_auth">Cannot authenticate server!</string>
+
+    <!--Media Options-->
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="general_1">Movie</string>
+    <string name="general_2">Show</string>
+    <string name="youtube_1">Video</string>
+    <string name="youtube_2">Playlist</string>
+    <string name="youtube_3">Channel</string>
+    <string name="spotify_1">Track</string>
+    <string name="spotify_2">Playlist</string>
+    <string name="spotify_3">Album</string>
+    <string name="uri_1">Website Link</string>
+    <string name="uri_2">URI</string>
+    <string name="timer_1">Timer</string>
+    <string name="timer_2">Alarm</string>
+    <string name="timer_3">Event</string>
+    <string name="network_1">Saved/Open</string>
+    <string name="network_2">WPA</string>
+    <string name="network_3">WEP</string>
+    <string name="dnd">Do Not Disturb</string>
+    <string name="dnd_1">Silence</string>
+    <string name="dnd_2">Priority</string>
+    <string name="dnd_3">Alarms</string>
+
+    <!--Media Popup-->
+    <string name="tasker_switch">Tasker</string>
+    <string name="figure_name">Name your tag!</string>
+    <string name="collection_hint">Group Name</string>
+    <string name="streaming_choice">Choose Streaming Source</string>
+    <string name="media_title">Title of Media</string>
+    <string name="search_description">Search for media</string>
+    <string name="before_task">Before Task</string>
+    <string name="after_task">After Task</string>
+    <string name="tasker_parameters">Tasker Parameter</string>
+    <string name="dice_highest">Drop Highest: </string>
+    <string name="dice_lowest">Drop Lowest: </string>
+    <string name="dice_reroll">Re-Roll Below: </string>
+    <string name="dice_modifier">Modifier: </string>
+    <string name="dice_add">Add New Die</string>
+    <string name="dice_options">Options</string>
+    <string name="delete_form">Delete Template</string>
+    <string name="no_label">Choose a Label</string>
+    <string name="edit_label">Edit Label Names</string>
+
+    <!--Media Card-->
+    <string name="thumbnail_image">Media Thumbnail</string>
+    <string name="tasker_description">Tasker Icon</string>
+    <string name="streaming_description">Streaming Icon</string>
+    <string name="comment_hint">Comments</string>
+
+    <!--QR-->
+    <string name="qr_prompt">Data: </string>
+
+</resources>
